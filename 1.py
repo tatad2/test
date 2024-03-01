@@ -41,8 +41,8 @@ for row in temp:
     eles = row.find_elements(By.TAG_NAME, "td")
     if len(eles) != 6:
         continue
-    if eles[4].text[:] == type:
-        type = eles[1].text[:]
+    if eles[4].text == type:
+        type = eles[1].text
         break 
 
 print(year, month, day, type)
