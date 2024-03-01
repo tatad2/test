@@ -82,5 +82,5 @@ except Exception:
 
 # 打印结果，并写入文件
 print(res)
-with open('result.txt', 'w') as f:
+with open('result.txt', 'w', encoding='utf-8') as f:
     f.write(f"{year}.{month}.{day}, {type}, {res}\n")
